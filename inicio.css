@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Felipa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-inicio {
+  height: 100vh;
+  background-image: url(../images/fondo-harry-potter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-indicacion-inicio {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 80%;
+  height: 0 auto;
+}
+
+.titulo-inicio {
+  font-family: "Felipa", serif;
+  text-align: center;
+  font-size: 6.5rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+.indicacion-inicio {
+  font-family: "Felipa", serif;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
+}
+
+.boton-start {
+  margin-top: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-family: "Almendra SC", serif;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 440px) {
+  .titulo-inicio {
+    font-family: "Felipa", serif;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding: 1.5rem;
+  }
+
+  .indicacion-inicio {
+    font-family: "Felipa", serif;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  .boton-start {
+    margin-top: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-family: "Almendra SC", serif;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+}
+
+@media screen and (min-width: 441px) and (max-width: 640px) {
+  .titulo-inicio {
+    font-family: "Felipa", serif;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  .indicacion-inicio {
+    font-family: "Felipa", serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  .boton-start {
+    margin-top: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-family: "Almendra SC", serif;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-practica {
+  height: 100vh;
+  background-image: url(../images/fondo-harry-potter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 80%;
+  height: 20%;
+  margin-bottom: 2rem;
+}
+
+.contenedor-input-frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-frase {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Linden Hill", serif;
+}
+
+#valor-escrito {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: "Linden Hill", serif;
+}
+
+#frase {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Linden Hill", serif;
+}
+
+.contenedor-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 90%;
+  height: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contenido-modal {
+  position: relative;
+}
+
+.cerrar-modal {
+  position: absolute;
+  padding: 0.5rem;
+  right: 0.8rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#mensaje {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Linden Hill", serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.boton-inicio-juego {
+  margin-top: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-family: "Almendra SC", serif;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.boton-regresar-inicio {
+  margin-top: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Almendra SC", serif;
+  text-align: center;
+}
+
+/* .texto-boton-regresar-inicio {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Almendra SC", serif;
+  text-align: center;
+} */
+
+.destacar {
+  background-color: brown;
+}
+
+.error {
+  background-color: lightcoral;
+  border: red;
+}
+
+/* Media query para pantallas pequeñas */
+
+@media screen and (max-width: 400px) {
+  .contenedor-frase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    /* height: 20%; */
+    margin-bottom: 2rem;
+  }
+
+  .input-frase {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    width: 80%;
+    font-size: 1rem;
+    font-family: "Linden Hill", serif;
+  }
+
+  #valor-escrito {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    width: 80%;
+    font-size: 1.5rem;
+    font-family: "Linden Hill", serif;
+  }
+
+  #frase {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Linden Hill", serif;
+  }
+
+  .contenedor-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    height: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .contenido-modal {
+    position: relative;
+  }
+
+  .cerrar-modal {
+    position: absolute;
+    padding: 0.5rem;
+    right: 0.8rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  #mensaje {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Linden Hill", serif;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .boton-inicio-juego {
+    margin-top: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-family: "Almendra SC", serif;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .boton-regresar-inicio {
+    margin-top: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Almendra SC", serif;
+    text-align: center;
+  }
+
+  /* .texto-boton-regresar-inicio {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Almendra SC", serif;
+    text-align: center;
+  } */
+
+  .input-frase {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    width: 50%;
+    font-size: 1rem;
+    font-family: "Linden Hill", serif;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 640px) {
+  .input-frase {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    width: 80%;
+    font-size: 1rem;
+    font-family: "Linden Hill", serif;
+  }
+
+  #frase {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: "Linden Hill", serif;
+  }
+}

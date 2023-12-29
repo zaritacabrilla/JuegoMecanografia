@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Mecanografía</title>
+    <link rel="stylesheet" href="./practica.css" />
+  </head>
+  <body>
+    <div class="contenedor-practica">
+      <div class="contenedor-frase" id="contenedor-frase">
+        <p class="texto-frase" id="frase"></p>
+      </div>
+      <div class="contenedor-input-frase">
+        <input
+          class="input-frase"
+          type="text"
+          aria-label="palabra actual"
+          id="valor-escrito"
+        />
+      </div>
+      <div class="contenedor-boton-inicio-juego">
+        <button
+          click="mostrarInput()"
+          class="boton-inicio-juego"
+          type="button"
+          id="boton-inicio-juego"
+        >
+          Comenzar
+        </button>
+      </div>
+      <div id="contenedor-modal" class="contenedor-modal" style="display: none">
+        <div id="contenido-modal" class="contenido-modal">
+          <button id="cerrar-modal" class="cerrar-modal">X</button>
+          <p id="mensaje"></p>
+        </div>
+      </div>
+      <div class="contenedor-boton-regresar-inicio">
+        <button class="boton-regresar-inicio" type="button" id="boton-regresar-inicio">
+          Regresar
+        </button>
+      </div>
+    </div>
+    <script src="./script.js" defer></script>
+    <script>
+      document
+        .getElementById("boton-regresar-inicio")
+        .addEventListener("click", function () {
+          window.location.href = "inicio.html";
+        });
+    </script>
+  </body>
+</html>

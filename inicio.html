@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego Mecanografía</title>
+    <link rel="stylesheet" href="./inicio.css" />
+  </head>
+  <body>
+    <div class="contenedor-inicio">
+      <div class="contenedor-indicacion-inicio">
+        <h1 class="titulo-inicio">Practica tus habilidades de mecanografía</h1>
+        <p class="indicacion-inicio">¡Haz clic en comenzar!</p>
+      </div>
+      <div class="contenedor-boton-start">
+        <button class="boton-start" type="button" id="start-inicio">
+          Comenzar
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("start-inicio")
+        .addEventListener("click", function () {
+          window.location.href = "practica.html";
+        });
+    </script>
+  </body>
+</html>
