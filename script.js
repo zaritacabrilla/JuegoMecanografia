@@ -113,6 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
       indicePalabras++;
 
       if (indicePalabras < palabras.length) {
+        if (fraseElement.childNodes[indicePalabras - 1]) {
+          fraseElement.childNodes[indicePalabras - 1].className = "";
+        }
         resaltarSiguientePalabra();
       } else {
         eliminarInput();
@@ -124,9 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mostrarModal(mensaje);
       }
 
-      if (indicePalabras > 0 && fraseElement.childNodes[indicePalabras - 1]) {
-        fraseElement.childNodes[indicePalabras - 1].className = "";
-      }
     } else if (palabraActual.startsWith(valorEscrito)) {
       valorEscritoElement.className = "";
     } else {
